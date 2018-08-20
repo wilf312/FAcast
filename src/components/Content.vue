@@ -3,7 +3,7 @@
     <h2>{{`${currentEpisode.uid} ${currentEpisode.title}`}}</h2>
     <p>{{currentEpisode.description}}</p>
     <div>
-      <audio :src="`/assets/storage/${currentEpisode.uid}.mp3`" controls />
+      <audio :src="`/static/storage/${currentEpisode.uid}.mp3`" controls />
     </div>
     <div>
       ShowNotes

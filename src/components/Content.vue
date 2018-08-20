@@ -3,7 +3,7 @@
     <h2>{{`${currentEpisode.uid} ${currentEpisode.title}`}}</h2>
     <p>{{currentEpisode.description}}</p>
     <div>
-      再生プレイヤー
+      <audio :src="`/assets/storage/${currentEpisode.uid}.mp3`" controls />
     </div>
     <div>
       ShowNotes

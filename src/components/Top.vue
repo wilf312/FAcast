@@ -2,8 +2,8 @@
   <div class="Top">
     <h2>エピソード</h2>
     <ul>
-      <li v-for="({link, title}, key) in episodeList" :key="key">
-        <router-link :to="link" v-text="title" />
+      <li v-for="({uid, link, title}, key) in episodeList" :key="key">
+        <router-link :to="link" v-text="`${uid}: ${title}`" />
       </li>
     </ul>
   </div>

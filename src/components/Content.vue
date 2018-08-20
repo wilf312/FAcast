@@ -1,6 +1,6 @@
 <template>
   <div class="Content">
-    <h2>{{currentEpisode.title}}</h2>
+    <h2>{{`${currentEpisode.uid} ${currentEpisode.title}`}}</h2>
     <p>{{currentEpisode.description}}</p>
     <div>
       再生プレイヤー

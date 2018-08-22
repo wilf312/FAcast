@@ -11,7 +11,7 @@ const store = {
         uid: '001',
         description: '説明',
         link: '/001',
-        title: 'I never redirected in my life'
+        title: 'I\'ve never redirected in my life'
       },
       {
         uid: '000',

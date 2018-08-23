@@ -5,8 +5,8 @@ const yaml = require('js-yaml');
 let config
 let episode
 try {
-  episode = yaml.safeLoad(fs.readFileSync('src/assets/episode.yml', 'utf8'));
-  config = yaml.safeLoad(fs.readFileSync('src/assets/config.yml', 'utf8'));
+  episode = yaml.safeLoad(fs.readFileSync('./src/assets/episode.yml', 'utf8'));
+  config = yaml.safeLoad(fs.readFileSync('./src/assets/config.yml', 'utf8'));
 } catch (e) {
   console.log(e);
 }

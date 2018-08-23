@@ -7,28 +7,28 @@ const feed = new Podcast({
     description: 'FAcast',
     feed_url: 'https://facast.net/feed.xml',
     site_url: 'https://facast.net',
-    image_url: 'todo',
-    docs: 'todo',
+    image_url: 'https://facast.net/static/ogp.jpg',
+    docs: '雑談系Podcast',
     author: 'Hayato Aokiba/Okada Genya',
     managingEditor: 'Hayato Aokiba/Okada Genya',
     webMaster: 'Hayato Aokiba/Okada Genya',
     copyright: '2018 Okada Genya',
     language: 'ja',
     categories: ['car', 'auto', 'frontend'],
-    pubDate: 'May 20, 2012 04:00:00 GMT', // todo
+    pubDate: 'May 20, 2012 04:00:00 JST',
     ttl: '60',
     itunesAuthor: 'Hayato Aokiba/Okada Genya',
-    itunesSubtitle: 'sub title',
-    itunesSummary: 'summary',
+    itunesSubtitle: '雑談系Podcast',
+    itunesSummary: '雑談系Podcast',
     itunesOwner: { name: 'Okada Genya', email:'g.okada.wilf@gmail.com' },
     itunesExplicit: false,
     itunesCategory: {
-        "text": "todo",
+        "text": "Technology",
         "subcats": [{
-          "text": "todo"
+          "text": "Technology"
         }]
     },
-    itunesImage: 'http://link.to/todo.png'
+    itunesImage: 'https://facast.net/static/ogp.jpg' // 1400? http://cdn.rebuild.fm/images/icon1400.jpg
 });
 
 /* loop over data and add to feed */

@@ -12,7 +12,7 @@
     "test": "npm run unit && npm run e2e",
     "build": "run-s build:site build:rss",
     "build:rss": "node ./rssBuild.js",
-    "build:site": "node build/build.js"
+    "build:site": "node build/build.js && cp _redirects dist/_redirects"
   },
   "dependencies": {
     "vue": "^2.5.2",

@@ -56,12 +56,20 @@ episodeList.forEach(({
   duration,
   uid
 }) => {
+  const path = `/static/storage/${uid}.mp3`;
+  const stat = fs.statSync(`.${path}`);
+
   feed.addItem(Object.assign({}, {
     title,
     description,
     url: `${domain}/${uid}`, // link to the item
     date: pubDate, // any format that js Date can parse.
-    itunesDuration: duration
+    itunesDuration: duration,
+    enclosure: {
+      url: `${domain}${path}`,
+      type: 'audio/mpeg',
+      length: `${stat.size}`
+    }
   }, feedConst));
 });
 

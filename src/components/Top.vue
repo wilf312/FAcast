@@ -1,5 +1,9 @@
 <template>
   <div class="Top">
+    <div class="description">
+      <p>{{config.description}}</p>
+    </div>
+
     <h2>エピソード</h2>
     <ul class="episodeList">
       <li v-for="({uid, link, title, description}, key) in episodeList" :key="key">
@@ -24,7 +28,8 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'episodeList'
+      'episodeList',
+      'config'
     ])
   }
 }

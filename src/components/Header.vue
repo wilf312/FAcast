@@ -32,6 +32,7 @@ export default {
   padding: 0 0 0 10px;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #f5f5f5;
+  background: #fafafa;
 }
 
 .HeaderInner {

@@ -30,10 +30,12 @@ export default {
 }
 
 .contents {
-  max-width: 600px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
 }
 
 .fade-enter-active,

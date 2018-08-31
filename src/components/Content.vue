@@ -27,4 +27,13 @@ export default {
 </script>
 
 <style scoped>
+.Content {
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+h2 {
+  margin-bottom: 1.6rem;
+  line-height: 1.8rem;
+}
 </style>

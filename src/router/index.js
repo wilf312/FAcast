@@ -15,6 +15,7 @@ export default new Router({
     },
     {
       path: '/:id',
+      name: 'Content',
       component: Content
     }
   ]

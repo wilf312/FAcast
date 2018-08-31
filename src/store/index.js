@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import episode from '@/assets/episode.yml'
+import config from '@/assets/config.yml'
 
 Vue.use(Vuex)
 
@@ -9,7 +10,8 @@ const store = {
   state: {
     episodeList: [
       ...episode.episodeList
-    ]
+    ],
+    config
   },
   getters: {
     episodeList(state) {
@@ -17,6 +19,9 @@ const store = {
         ...d,
         link: `/${d.uid}`
       }))
+    },
+    config(state) {
+      return state.config
     }
   },
   mutations: {

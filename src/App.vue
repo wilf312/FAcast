@@ -9,15 +9,18 @@
         <router-view class="child-view"></router-view>
       </transition>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
@@ -31,6 +34,7 @@ export default {
 
 .contents {
   max-width: 800px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;

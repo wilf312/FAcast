@@ -21,7 +21,10 @@ const store = {
       }))
     },
     config(state) {
-      return state.config
+      return {
+        ...state.config,
+        hashtagSharp: `#${state.config.hashtag}`
+      }
     }
   },
   mutations: {

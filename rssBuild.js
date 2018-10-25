@@ -35,12 +35,12 @@ const feed = new Podcast({
   itunesSummary: '雑談系Podcast',
   itunesOwner: { name: 'Okada Genya', email:'g.okada.wilf@gmail.com' },
   itunesExplicit: false,
-  itunesCategory: {
+  itunesCategory: [{
     "text": "Technology",
     "subcats": [{
       "text": "Technology"
     }]
-  },
+  }],
   itunesImage: `${domain}/static/ogp.jpg` // 1400? http://cdn.rebuild.fm/images/icon1400.j`
 });
 

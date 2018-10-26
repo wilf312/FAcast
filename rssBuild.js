@@ -20,7 +20,7 @@ const feed = new Podcast({
   description: 'FAcast',
   feed_url: `${domain}/feed.xml`,
   site_url: `${domain}`,
-  image_url: `${domain}/static/ogp.jpg`,
+  image_url: `${domain}/static/ogp.png`,
   docs: '雑談系Podcast',
   author: author,
   managingEditor: author,
@@ -41,7 +41,7 @@ const feed = new Podcast({
       "text": "Technology"
     }]
   }],
-  itunesImage: `${domain}/static/ogp.jpg` // 1400? http://cdn.rebuild.fm/images/icon1400.j`
+  itunesImage: `${domain}/static/ogp.png` // 1400? http://cdn.rebuild.fm/images/icon1400.j`
 });
 
 /* loop over data and add to feed */

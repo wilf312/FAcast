@@ -5,9 +5,9 @@
     <div>
       <audio :src="`/static/storage/${currentEpisode.uid}.mp3`" controls />
     </div>
-    <div>
+    <!-- <div>
       ShowNotes
-    </div>
+    </div> -->
   </div>
 </template>
 

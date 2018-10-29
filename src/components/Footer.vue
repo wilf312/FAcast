@@ -24,13 +24,11 @@
       </div>
       <div class="FooterContent">
         <h3>購読</h3>
-        <p>
-          新しいエピソードの配信を購読できます。
-          iTunesで購読
-          Androidで購読
-          Pushdogで購読
-          RSSで購読
-        </p>
+        <div>
+          <p>新しいエピソードの配信を購読できます。</p>
+          <p><a href="https://itunes.apple.com/jp/podcast/facast/id1440324892?mt=2" target="_blank">iTunesで購読</a></p>
+          <p><a href="https://facast.net/feed.xml" target="_blank">RSSで購読</a></p>
+        </div>
       </div>
     </div>
   </div>

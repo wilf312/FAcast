@@ -1,5 +1,17 @@
 episodeList:
   -
+    uid: "002"
+    title: Dead or Social Dead
+    description: 食の連鎖、カフェイン中毒、データのバックアップ、コンビニのトイレの話をしました。
+    duration:  7584
+    pubDate: Tue, 30 Oct 2018 21:00:00 +0900
+    showNotes: "食の連鎖
+カフェイン中毒
+落語
+芝浜
+データのバックアップ
+コンビニのトイレ問題"
+  -
     uid: "001"
     title: I've never redirected in my life
     description: ゼルダの伝説/switch、万引き少年を捕まえた話、お盆の渋滞の話をしました。

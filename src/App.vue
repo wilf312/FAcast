@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import debounce from 'lodash.debounce'
 import Header from './components/Header'
 import Footer from './components/Footer'
 export default {
@@ -21,6 +22,18 @@ export default {
   components: {
     Header,
     Footer
+  },
+  methods: {
+    resize () {
+      this.$store.dispatch('checkDevice')
+    }
+  },
+  mounted () {
+    window.addEventListener('resize', debounce(this.resize, 300), false)
+    this.$store.dispatch('checkDevice')
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.resize, false)
   }
 }
 </script>

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import episode from '@/assets/episode.yml'
 import config from '@/assets/config.yml'
+import { DEVICE_TYPE, BREAK_POINT } from '@/const'
 
 Vue.use(Vuex)
 
@@ -11,7 +12,8 @@ const store = {
     episodeList: [
       ...episode.episodeList
     ],
-    config
+    config,
+    deviceType: DEVICE_TYPE.PC
   },
   getters: {
     episodeList(state) {
@@ -28,12 +30,13 @@ const store = {
     }
   },
   mutations: {
-    setOrderNumber(state, elementList) {
+    checkDevice(state, deviceType) {
+      return state.deviceType = deviceType
     }
   },
   actions: {
-    changePage({ commit }, pageNum) {
-      commit('changePage', pageNum)
+    checkDevice({ commit }) {
+      commit('checkDevice', window.innerWidth > BREAK_POINT ? DEVICE_TYPE.PC : DEVICE_TYPE.SP)
     }
   },
   plugins: []

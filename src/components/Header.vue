@@ -13,8 +13,9 @@
         </transition>
       </div>
       <div class="rss">
-        <div class="rssButton"
-          @click="copyRss">RSSを購読</div>
+        <div class="rssButton">
+          <a :href="config.rss">RSSを購読</a>
+        </div>
       </div>
     </div>
   </div>
@@ -31,27 +32,6 @@ export default {
     ...mapGetters([
       'config'
     ])
-  },
-  methods: {
-    copyRss: function () {
-      const rss = this.config.rss
-      const temp = document.createElement('div')
-      temp.appendChild(document.createElement('pre')).textContent = rss
-
-      temp.style.position = 'fixed'
-      temp.style.left = '-100%'
-
-      document.body.appendChild(temp)
-      document.getSelection().selectAllChildren(temp)
-
-      const result = document.execCommand('copy')
-
-      document.body.removeChild(temp)
-
-      if (result) {
-        alert('コピーしました')
-      }
-    }
   }
 }
 </script>
@@ -101,5 +81,12 @@ p {
 }
 .rssButton:hover {
   background: #dddddd;
+}
+.rssButton:hover {
+  background: #dddddd;
+}
+.rssButton a {
+  color: #333333;
+  text-decoration: none;
 }
 </style>

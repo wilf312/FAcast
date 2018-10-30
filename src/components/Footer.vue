@@ -1,6 +1,6 @@
 <template>
   <div class="Footer">
-    <div class="FooterInner">
+    <div :class="['FooterInner', deviceType]">
       <div class="FooterContent">
         <h3>{{config.name}}とは？</h3>
         <p>{{config.name}}は、フロントエンド、車などの雑談を中心に、いま現在フリーランスで仕事をする人達が話す、暇をつぶすためのためのラジオです。</p>
@@ -35,34 +35,40 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapState } from 'vuex'
 export default {
   name: 'Footer',
   computed: {
     ...mapGetters([
       'config'
+    ]),
+    ...mapState([
+      'deviceType'
     ])
   }
 }
 </script>
 
-<style scoped>
-.Footer {
-  padding: 30px 0;
-  background: #fafafa;
-}
-.FooterInner {
-  max-width: 800px;
-  display: flex;
-  flex-direction: row;
-  margin:  0 auto;
-}
-.FooterContent {
-  box-sizing: border-box;
-  padding: 0 10px;
-}
+<style scoped lang="stylus">
+.Footer
+  padding: 30px 0
+  background: #fafafa
 
-.FooterContent h3 {
-  font-size: 1.6rem;
-}
+.FooterInner
+  max-width: 800px
+  display: flex
+  flex-direction: row
+  margin:  0 auto
+
+  &.SP
+    flex-direction: column
+
+
+.FooterContent
+  box-sizing: border-box
+  padding: 0 10px
+
+  h3
+    font-size: 1.6rem
+
 </style>

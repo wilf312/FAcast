@@ -81,9 +81,9 @@ p
   border-radius 10px
   transition background 0.3s
   cursor pointer
+  &:hover
+    background #dddddd
   a
     color #333333
     text-decoration none
-    &:hover
-      background #dddddd
 </style>

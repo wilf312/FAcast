@@ -59,6 +59,8 @@ export default {
   display: flex
   flex-direction: row
   margin:  0 auto
+  box-sizing border-box
+  padding 0 1rem
 
   &.SP
     flex-direction: column

@@ -1,5 +1,15 @@
 episodeList:
   -
+    uid: "003"
+    title: Where are your music roots?
+    description: 夜のお仕事、否定される準備、世代を超える音楽、プロトコルの話をしました。
+    duration:  3737
+    pubDate: Tue, 30 Oct 2018 21:00:00 +0900
+    showNotes: "夜のお仕事
+否定される準備
+世代を超える音楽
+プロトコル"
+  -
     uid: "002"
     title: Dead or Social Dead
     description: 食の連鎖、カフェイン中毒、データのバックアップ、コンビニのトイレの話をしました。

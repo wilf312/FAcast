@@ -1,5 +1,7 @@
 # FAcast
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wilf312/FAcast.svg)](https://greenkeeper.io/)
+
 > A Vue.js project
 
 ## Build Setup

@@ -1,5 +1,31 @@
 episodeList:
   -
+    uid: "004"
+    title: I was born to run
+    description: 走るために生まれた車、飛行機が飛ばなかった話、疲労回復の話をしました。
+    duration:  3737
+    pubDate: Tue, 20 Dec 2018 20:00:00 +0900
+    showNotes: "- 1.走るために生まれた車
+    - 芦ノ湖
+    - 山を走る
+- 2.渋滞とグーグルマップと再び渋滞
+- 石垣京都旅行
+- http://travel.willer.co.jp/seat/cocoon/
+- 疲労回復
+    - ベッド
+- 2018年10月のスマホに求めること
+    - P20 pro https://twitter.com/hashtag/p20pro?f=images&vertical=default&src=hash
+    - カメラ
+    - 決済
+    - GPS
+    - 1Password
+    - podcast 視聴
+- アイデアの引き出しを開ける
+- 自然の中から(物理的に存在するもの)配色を学ぶ
+- 初期衝動と気持ちの継続
+    - 自分の人生を象徴するものにしか努力しつづけることは難しいんじゃないか みたいな話
+- ゼルダ２週目"
+  -
     uid: "003"
     title: Where are your music roots?
     description: お酒を飲む仕事、否定される準備、世代を超える音楽、プロトコルの話をしました。
